@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
+/// A branded logo loader with animated spinner ring.
+///
+/// Displays your custom logo or widget in the center
+/// with an animated rotating ring around it.
+/// Perfect for branded loading states.
+///
+/// Example:
+/// ```dart
+/// LogoLoader(
+///   logo: Icon(Icons.flutter_dash, size: 40),
+///   backgroundColor: Colors.blue,
+/// )
+/// ```
 class LogoLoader extends StatefulWidget {
   final Widget logo;
   final Color backgroundColor;
@@ -59,7 +72,9 @@ class _LogoLoaderState extends State<LogoLoader>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: widget.ringColor ?? widget.backgroundColor.withOpacity(0.3),
+                  color:
+                      widget.ringColor ??
+                      widget.backgroundColor.withValues(alpha: 0.3),
                   width: widget.arcThickness,
                 ),
               ),
@@ -88,7 +103,7 @@ class _LogoLoaderState extends State<LogoLoader>
               color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
+                  color: Colors.black.withValues(alpha: 0.1),
                   blurRadius: 8,
                 ),
               ],

@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// A horizontal progress bar loader.
+///
+/// Displays a smooth filling progress bar with optional percentage text.
+/// Perfect for download, upload, or progress indication.
+///
+/// Example:
+/// ```dart
+/// LinearLoader(
+///   loaderColor: Colors.blue,
+///   showPercentage: true,
+/// )
+/// ```
 class LinearLoader extends StatefulWidget {
   final Color backgroundColor;
   final Color loaderColor;
@@ -49,10 +61,9 @@ class _LinearLoaderState extends State<LinearLoader>
 
   @override
   Widget build(BuildContext context) {
-    final gradientColors = widget.gradientColors ?? [
-      widget.loaderColor,
-      widget.loaderColor.withOpacity(0.6),
-    ];
+    final gradientColors =
+        widget.gradientColors ??
+        [widget.loaderColor, widget.loaderColor.withValues(alpha: 0.6)];
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -98,7 +109,8 @@ class _LinearLoaderState extends State<LinearLoader>
               builder: (context, child) {
                 return Text(
                   '${(_controller.value * 100).toStringAsFixed(0)}%',
-                  style: widget.textStyle ??
+                  style:
+                      widget.textStyle ??
                       const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,

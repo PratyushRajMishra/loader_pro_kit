@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// A shimmer effect loader for skeleton placeholders.
+///
+/// Displays a shimmer effect across a placeholder,
+/// simulating content loading. Perfect for skeleton loading.
+///
+/// Example:
+/// ```dart
+/// ShimmerLoader(
+///   height: 20,
+///   width: double.infinity,
+/// )
+/// ```
 class ShimmerLoader extends StatefulWidget {
   final double width;
   final double height;

@@ -1,5 +1,20 @@
 import 'package:flutter/material.dart';
 
+/// A complex content placeholder skeleton loader.
+///
+/// Displays multiple skeleton items with shimmer effect,
+/// perfect for showing placeholder layouts while content loads.
+/// Supports both line and circle skeleton items.
+///
+/// Example:
+/// ```dart
+/// SkeletonLoader(
+///   items: [
+///     SkeletonLine(height: 16),
+///     SkeletonCircle(radius: 30),
+///   ],
+/// )
+/// ```
 class SkeletonLoader extends StatefulWidget {
   final List<SkeletonItem> items;
   final Duration duration;
@@ -56,6 +71,9 @@ class _SkeletonLoaderState extends State<SkeletonLoader>
   }
 }
 
+/// Base class for skeleton loader items.
+///
+/// Implement this to create custom skeleton items for the [SkeletonLoader].
 abstract class SkeletonItem {
   Widget build(
     AnimationController controller,
@@ -65,6 +83,10 @@ abstract class SkeletonItem {
   );
 }
 
+/// A line-shaped skeleton item.
+///
+/// Displays a rectangular line with shimmer effect,
+/// perfect for text or content placeholders.
 class SkeletonLine extends SkeletonItem {
   final double width;
   final double height;
@@ -118,6 +140,10 @@ class SkeletonLine extends SkeletonItem {
   }
 }
 
+/// A circular skeleton item.
+///
+/// Displays a circular shape with shimmer effect,
+/// perfect for avatar or profile picture placeholders.
 class SkeletonCircle extends SkeletonItem {
   final double radius;
   final EdgeInsets margin;

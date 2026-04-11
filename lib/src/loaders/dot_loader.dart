@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// An animated scaling dots loader.
+///
+/// Displays multiple dots that scale up and down in sequence,
+/// creating a smooth wave-like animation.
+///
+/// Example:
+/// ```dart
+/// DotLoader(
+///   color: Colors.green,
+///   dotCount: 4,
+/// )
+/// ```
 class DotLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -47,22 +59,25 @@ class _DotLoaderState extends State<DotLoader>
   Widget build(BuildContext context) {
     return SizedBox(
       height: widget.size * 2,
-      width: widget.size * widget.dotCount + widget.spacing * (widget.dotCount - 1),
+      width:
+          widget.size * widget.dotCount +
+          widget.spacing * (widget.dotCount - 1),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: List.generate(
           widget.dotCount,
           (index) => ScaleTransition(
-            scale: Tween<double>(begin: widget.minScale, end: widget.maxScale).animate(
-              CurvedAnimation(
-                parent: _controller,
-                curve: Interval(
-                  index / widget.dotCount,
-                  (index + 1) / widget.dotCount,
-                  curve: widget.animationCurve,
+            scale: Tween<double>(begin: widget.minScale, end: widget.maxScale)
+                .animate(
+                  CurvedAnimation(
+                    parent: _controller,
+                    curve: Interval(
+                      index / widget.dotCount,
+                      (index + 1) / widget.dotCount,
+                      curve: widget.animationCurve,
+                    ),
+                  ),
                 ),
-              ),
-            ),
             child: Container(
               width: widget.size,
               height: widget.size,

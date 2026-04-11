@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// A classic rotating circle spinner loader animation.
+///
+/// Displays a smooth rotating circle with a customizable border.
+/// Perfect for simple, elegant loading states.
+///
+/// Example:
+/// ```dart
+/// CircleLoader(
+///   color: Colors.blue,
+///   size: 60,
+/// )
+/// ```
 class CircleLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -50,7 +62,8 @@ class _CircleLoaderState extends State<CircleLoader>
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(
-              color: widget.backgroundColor ?? widget.color.withOpacity(0.2),
+              color:
+                  widget.backgroundColor ?? widget.color.withValues(alpha: 0.2),
               width: widget.borderWidth,
             ),
           ),
@@ -58,10 +71,7 @@ class _CircleLoaderState extends State<CircleLoader>
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border(
-                top: BorderSide(
-                  color: widget.color,
-                  width: widget.borderWidth,
-                ),
+                top: BorderSide(color: widget.color, width: widget.borderWidth),
               ),
             ),
           ),

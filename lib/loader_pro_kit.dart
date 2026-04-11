@@ -1,3 +1,29 @@
+/// A comprehensive Flutter package with 11 beautiful, fully customizable loading animations.
+///
+/// This package provides 11 different loader animations, each fully customizable
+/// with support for colors, sizes, durations, and animation curves.
+///
+/// **Circular Loaders:**
+/// - [CircleLoader] - Classic rotating circle spinner
+/// - [DotLoader] - Animated scaling dots
+/// - [PulseLoader] - Expanding circular pulses
+/// - [WaveLoader] - Wave motion animation
+/// - [SpinningLoader] - Smooth rotating arc
+/// - [BounceLoader] - Bouncing ball animation
+///
+/// **Advanced Loaders:**
+/// - [LogoLoader] - Display your brand logo while loading
+/// - [ImageLoader] - Circular image with animated border
+/// - [LinearLoader] - Progress bar with percentage display
+/// - [ShimmerLoader] - Skeleton/placeholder shimmer effect
+/// - [SkeletonLoader] - Complex content placeholder loading
+///
+/// All loaders support:
+/// - Custom colors and gradients
+/// - Size customization
+/// - Duration control
+/// - Animation curve selection
+/// - Advanced parameters per loader type
 library loader_pro_kit;
 
 export 'src/loaders/circle_loader.dart';

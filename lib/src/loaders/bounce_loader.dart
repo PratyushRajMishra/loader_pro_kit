@@ -1,6 +1,18 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
+/// A bouncing balls loader animation.
+///
+/// Displays multiple balls bouncing up and down,
+/// creating a fun and engaging loading effect.
+///
+/// Example:
+/// ```dart
+/// BounceLoader(
+///   color: Colors.red,
+///   dotCount: 3,
+/// )
+/// ```
 class BounceLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -64,7 +76,9 @@ class _BounceLoaderState extends State<BounceLoader>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: widget.opacityAnimation
-                    ? widget.color.withOpacity(0.6 + 0.4 * index / widget.dotCount)
+                    ? widget.color.withValues(
+                        alpha: 0.6 + 0.4 * index / widget.dotCount,
+                      )
                     : widget.color,
               ),
             ),

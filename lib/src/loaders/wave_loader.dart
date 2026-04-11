@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// A wave motion loader animation.
+///
+/// Displays elements moving up and down in a wave pattern,
+/// creating a smooth, flowing animation effect.
+///
+/// Example:
+/// ```dart
+/// WaveLoader(
+///   color: Colors.pink,
+///   waveCount: 3,
+/// )
+/// ```
 class WaveLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -57,7 +69,10 @@ class _WaveLoaderState extends State<WaveLoader>
                   2 *
                   widget.waveHeight *
                   (1 -
-                      ((_controller.value * 2 - index / widget.waveCount * 2).abs() % 2 - 1)
+                      ((_controller.value * 2 - index / widget.waveCount * 2)
+                                      .abs() %
+                                  2 -
+                              1)
                           .abs()),
             ),
             child: Container(
@@ -65,7 +80,9 @@ class _WaveLoaderState extends State<WaveLoader>
               height: widget.size,
               decoration: BoxDecoration(
                 color: widget.color,
-                borderRadius: BorderRadius.circular(widget.size * widget.borderRadius),
+                borderRadius: BorderRadius.circular(
+                  widget.size * widget.borderRadius,
+                ),
               ),
             ),
           ),

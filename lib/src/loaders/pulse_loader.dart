@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// An expanding circular rings pulse loader.
+///
+/// Displays multiple circular rings that expand outward,
+/// creating a pulsing effect perfect for smooth loading states.
+///
+/// Example:
+/// ```dart
+/// PulseLoader(
+///   color: Colors.orange,
+///   pulseCount: 3,
+/// )
+/// ```
 class PulseLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -67,8 +79,10 @@ class _PulseLoaderState extends State<PulseLoader>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: widget.color.withOpacity(
-                    widget.minOpacity + (0.3 * (1 - index / widget.pulseCount)),
+                  color: widget.color.withValues(
+                    alpha:
+                        widget.minOpacity +
+                        (0.3 * (1 - index / widget.pulseCount)),
                   ),
                   width: 2,
                 ),

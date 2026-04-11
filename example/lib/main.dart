@@ -47,55 +47,37 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
 
               _LoaderCard(
                 title: 'Circle Loader',
-                child: CircleLoader(
-                  color: Colors.blueAccent,
-                  size: 60,
-                ),
+                child: CircleLoader(color: Colors.blueAccent, size: 60),
               ),
               const SizedBox(height: 30),
 
               _LoaderCard(
                 title: 'Dot Loader',
-                child: DotLoader(
-                  color: Colors.greenAccent,
-                  dotCount: 4,
-                ),
+                child: DotLoader(color: Colors.greenAccent, dotCount: 4),
               ),
               const SizedBox(height: 30),
 
               _LoaderCard(
                 title: 'Pulse Loader',
-                child: PulseLoader(
-                  color: Colors.orangeAccent,
-                  size: 60,
-                ),
+                child: PulseLoader(color: Colors.orangeAccent, size: 60),
               ),
               const SizedBox(height: 30),
 
               _LoaderCard(
                 title: 'Wave Loader',
-                child: WaveLoader(
-                  color: Colors.pinkAccent,
-                  size: 40,
-                ),
+                child: WaveLoader(color: Colors.pinkAccent, size: 40),
               ),
               const SizedBox(height: 30),
 
               _LoaderCard(
                 title: 'Spinning Loader',
-                child: SpinningLoader(
-                  color: Colors.purpleAccent,
-                  size: 60,
-                ),
+                child: SpinningLoader(color: Colors.purpleAccent, size: 60),
               ),
               const SizedBox(height: 30),
 
               _LoaderCard(
                 title: 'Bounce Loader',
-                child: BounceLoader(
-                  color: Colors.redAccent,
-                  size: 12,
-                ),
+                child: BounceLoader(color: Colors.redAccent, size: 12),
               ),
               const SizedBox(height: 50),
 
@@ -121,9 +103,7 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
                 child: ImageLoader(
                   loaderColor: Colors.teal,
                   size: 80,
-                  image: const NetworkImage(
-                    'https://via.placeholder.com/150',
-                  ),
+                  image: const NetworkImage('https://via.placeholder.com/150'),
                 ),
               ),
               const SizedBox(height: 50),
@@ -133,10 +113,7 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
 
               _LoaderCard(
                 title: 'Linear Loader (Basic)',
-                child: LinearLoader(
-                  loaderColor: Colors.blue,
-                  height: 8,
-                ),
+                child: LinearLoader(loaderColor: Colors.blue, height: 8),
               ),
               const SizedBox(height: 30),
 
@@ -158,10 +135,7 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
                     const SizedBox(height: 12),
                     ShimmerLoader(height: 16),
                     const SizedBox(height: 12),
-                    ShimmerLoader(
-                      width: 150,
-                      height: 16,
-                    ),
+                    ShimmerLoader(width: 150, height: 16),
                   ],
                 ),
               ),
@@ -171,9 +145,18 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
                 title: 'Skeleton Loader',
                 child: SkeletonLoader(
                   items: [
-                    SkeletonCircle(radius: 30, margin: const EdgeInsets.only(bottom: 16)),
-                    SkeletonLine(height: 16, margin: const EdgeInsets.only(bottom: 12)),
-                    SkeletonLine(height: 16, margin: const EdgeInsets.only(bottom: 12)),
+                    SkeletonCircle(
+                      radius: 30,
+                      margin: const EdgeInsets.only(bottom: 16),
+                    ),
+                    SkeletonLine(
+                      height: 16,
+                      margin: const EdgeInsets.only(bottom: 12),
+                    ),
+                    SkeletonLine(
+                      height: 16,
+                      margin: const EdgeInsets.only(bottom: 12),
+                    ),
                     SkeletonLine(
                       height: 16,
                       width: 200,

@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 
+/// A circular image loader with animated gradient border.
+///
+/// Displays an image in a circle with a rotating gradient border,
+/// creating an elegant loading effect.
+/// Perfect for image or avatar loading states.
+///
+/// Example:
+/// ```dart
+/// ImageLoader(
+///   image: NetworkImage('https://example.com/image.jpg'),
+///   loaderColor: Colors.teal,
+/// )
+/// ```
 class ImageLoader extends StatefulWidget {
   final ImageProvider image;
   final Color loaderColor;
@@ -43,10 +56,9 @@ class _ImageLoaderState extends State<ImageLoader>
 
   @override
   Widget build(BuildContext context) {
-    final colors = widget.gradientColors ?? [
-      widget.loaderColor,
-      widget.loaderColor.withOpacity(0.2),
-    ];
+    final colors =
+        widget.gradientColors ??
+        [widget.loaderColor, widget.loaderColor.withValues(alpha: 0.2)];
 
     return SizedBox(
       width: widget.size + 20,
@@ -75,13 +87,10 @@ class _ImageLoaderState extends State<ImageLoader>
             height: widget.size - (widget.borderWidth * 2),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              image: DecorationImage(
-                image: widget.image,
-                fit: BoxFit.cover,
-              ),
+              image: DecorationImage(image: widget.image, fit: BoxFit.cover),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
+                  color: Colors.black.withValues(alpha: 0.2),
                   blurRadius: 8,
                   spreadRadius: 2,
                 ),

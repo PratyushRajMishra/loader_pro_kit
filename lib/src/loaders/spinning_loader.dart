@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// A smooth rotating arc spinner loader.
+///
+/// Displays a rotating arc on a circle, creating a classic
+/// and professional loading indicator suitable for any app.
+///
+/// Example:
+/// ```dart
+/// SpinningLoader(
+///   color: Colors.purple,
+///   size: 60,
+/// )
+/// ```
 class SpinningLoader extends StatefulWidget {
   final Color color;
   final double size;
@@ -57,7 +69,9 @@ class _SpinningLoaderState extends State<SpinningLoader>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: widget.backgroundColor ?? widget.color.withOpacity(0.2),
+                  color:
+                      widget.backgroundColor ??
+                      widget.color.withValues(alpha: 0.2),
                   width: widget.borderWidth,
                 ),
               ),
