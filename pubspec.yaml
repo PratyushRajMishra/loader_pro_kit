@@ -1,10 +1,10 @@
 name: loader_pro_kit
 description: "A comprehensive Flutter package with 11 beautiful, fully customizable loading animations. Perfect for modern app UIs with smooth 60 FPS animations."
 version: 1.0.1
-homepage: https://github.com/pratyushmishra/loader-pro-kit
-repository: https://github.com/pratyushmishra/loader-pro-kit
-issue_tracker: https://github.com/pratyushmishra/loader-pro-kit/issues
-documentation: https://pub.dev/packages/loader_pro_kit
+homepage: https://github.com/PratyushRajMishra/loader_pro_kit
+repository: https://github.com/PratyushRajMishra/loader_pro_kit
+issue_tracker: https://github.com/PratyushRajMishra/loader_pro_kit
+documentation: https://github.com/PratyushRajMishra/loader_pro_kit
 
 environment:
   sdk: ^3.11.4
