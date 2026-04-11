@@ -19,12 +19,14 @@ A comprehensive Flutter package with **11 beautiful, fully customizable loading 
 - **ShimmerLoader** - Skeleton/placeholder shimmer effect
 - **SkeletonLoader** - Complex content placeholder loading
 
-## 🎥 Demo Videos
+## 🎥 Demo Video
 
-### Youtube Demo Playlist
-https://www.youtube.com/playlist?list=PLxxxxx
+<video width="500" controls>
+  <source src="https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-### Individual Loader Demos
+### Loader Details
 
 **CircleLoader**
 ```
@@ -109,7 +111,7 @@ Add this line to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  loader_pro_kit: ^0.0.1
+  loader_pro_kit: ^1.0.2
 ```
 
 Then run:
