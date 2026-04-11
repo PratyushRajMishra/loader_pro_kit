@@ -1,0 +1,113 @@
+import 'package:flutter/material.dart';
+
+class LinearLoader extends StatefulWidget {
+  final Color backgroundColor;
+  final Color loaderColor;
+  final double height;
+  final double borderRadius;
+  final Duration duration;
+  final bool showPercentage;
+  final Curve animationCurve;
+  final List<Color>? gradientColors;
+  final double width;
+  final TextStyle? textStyle;
+
+  const LinearLoader({
+    Key? key,
+    this.backgroundColor = const Color(0xFFE0E0E0),
+    this.loaderColor = Colors.blue,
+    this.height = 6,
+    this.borderRadius = 3,
+    this.duration = const Duration(seconds: 2),
+    this.showPercentage = false,
+    this.animationCurve = Curves.linear,
+    this.gradientColors,
+    this.width = double.infinity,
+    this.textStyle,
+  }) : super(key: key);
+
+  @override
+  State<LinearLoader> createState() => _LinearLoaderState();
+}
+
+class _LinearLoaderState extends State<LinearLoader>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(duration: widget.duration, vsync: this)
+      ..repeat();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final gradientColors = widget.gradientColors ?? [
+      widget.loaderColor,
+      widget.loaderColor.withOpacity(0.6),
+    ];
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          width: widget.width,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(widget.borderRadius),
+            child: Container(
+              height: widget.height,
+              color: widget.backgroundColor,
+              child: Stack(
+                children: [
+                  AnimatedBuilder(
+                    animation: _controller,
+                    builder: (context, child) {
+                      return FractionallySizedBox(
+                        widthFactor: _controller.value,
+                        heightFactor: 1.0,
+                        alignment: Alignment.centerLeft,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: gradientColors,
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        if (widget.showPercentage)
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: AnimatedBuilder(
+              animation: _controller,
+              builder: (context, child) {
+                return Text(
+                  '${(_controller.value * 100).toStringAsFixed(0)}%',
+                  style: widget.textStyle ??
+                      const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                      ),
+                );
+              },
+            ),
+          ),
+      ],
+    );
+  }
+}
