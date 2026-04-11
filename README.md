@@ -21,9 +21,9 @@ A comprehensive Flutter package with **11 beautiful, fully customizable loading 
 
 ## 🎥 Demo Video
 
-**[▶️ Click to watch demo video](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.mp4)**
+![Loader Pro Kit Demo](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.gif)
 
-Or download and play the video file included in the repository at `docs/videos/demo.mp4`
+**[Download Full Video](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.mp4)** • **[View on GitHub](https://github.com/PratyushRajMishra/loader_pro_kit/blob/main/docs/videos/demo.mp4)**
 
 ### Loader Details
 
