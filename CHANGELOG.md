@@ -1,4 +1,4 @@
-## 1.0.1
+## 1.0.2
 
 ### Bug Fixes
 - **Fixed deprecated `withOpacity()` warnings** - Replaced all `withOpacity()` calls with `.withValues(alpha: ...)` for better precision and future compatibility
@@ -50,4 +50,3 @@
 - Comprehensive documentation and usage examples
 - Complete test coverage with 13+ passing tests
 - Full-featured example app with all loaders demonstrated
-
