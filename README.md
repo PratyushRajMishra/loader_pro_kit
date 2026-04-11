@@ -22,9 +22,12 @@ A comprehensive Flutter package with **11 beautiful, fully customizable loading 
 ## 🎥 Demo Video
 
 <div align="center">
-
-![Loader Pro Kit Demo](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.gif)
-
+  <img 
+    src="https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.gif"
+    alt="Loader Pro Kit Demo"
+    width="250"
+    style="border-radius: 20px; border: 2px solid #ddd;"
+  />
 </div>
 
 ### Loader Details
