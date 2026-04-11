@@ -21,10 +21,9 @@ A comprehensive Flutter package with **11 beautiful, fully customizable loading 
 
 ## 🎥 Demo Video
 
-<video width="500" controls>
-  <source src="https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+**[▶️ Click to watch demo video](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/docs/videos/demo.mp4)**
+
+Or download and play the video file included in the repository at `docs/videos/demo.mp4`
 
 ### Loader Details
 
