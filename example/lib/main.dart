@@ -166,6 +166,56 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
                 ),
               ),
               const SizedBox(height: 50),
+
+              // ===== ORBIT LOADERS =====
+              const _SectionTitle(title: 'Orbit Loaders'),
+
+              _LoaderCard(
+                title: 'Orbit Loader (Default)',
+                child: OrbitLoader(color: Colors.blueAccent),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Orbit Loader (Glow)',
+                child: OrbitLoader(
+                  color: Colors.purpleAccent,
+                  glowEffect: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Orbit Loader (Gradient)',
+                child: OrbitLoader(
+                  useGradient: true,
+                  gradientColors: [Colors.purple, Colors.blue],
+                  glowEffect: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Orbit Loader (Elliptical)',
+                child: OrbitLoader(
+                  color: Colors.teal,
+                  elliptical: true,
+                  ellipseRatio: 0.5,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Orbit Loader (Compact)',
+                child: OrbitLoader(
+                  size: 40,
+                  radius: 15,
+                  dotSize: 5,
+                  dotCount: 4,
+                  duration: const Duration(milliseconds: 800),
+                ),
+              ),
+              const SizedBox(height: 50),
             ],
           ),
         ),

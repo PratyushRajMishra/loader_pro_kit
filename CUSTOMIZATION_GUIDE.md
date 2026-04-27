@@ -1,113 +1,174 @@
-# Loader Pro Kit - Complete Customization Guide
+# Loader Pro Kit – Complete Customization Guide
 
-## 11 Fully Customizable Loaders
+A powerful Flutter loader package with **12 fully customizable loaders**, including modern animations like Orbit, Shimmer, Skeleton, and more.
+
+---
+
+## 12. OrbitLoader (Premium Animation)
+
+```dart
+OrbitLoader(
+  size: 70,                        // Overall size
+  dotCount: 6,                     // Number of orbiting dots
+  radius: 25,                      // Orbit radius
+  dotSize: 8,                      // Size of each dot
+  duration: Duration(milliseconds: 1200),
+  curve: Curves.linear,
+
+  reverse: false,                  // Reverse rotation
+  glowEffect: true,                // Enable glow effect
+
+  animateScale: true,              // Scale animation
+  animateOpacity: true,            // Opacity animation
+
+  elliptical: false,               // Enable elliptical orbit
+  ellipseRatio: 0.6,               // Ellipse height ratio
+
+  useGradient: true,               // Enable gradient colors
+  gradientColors: [Colors.purple, Colors.blue],
+  color: Colors.blue,              // Fallback color
+)
+```
+
+---
+
+## Core Loaders
 
 ### 1. CircleLoader
+
 ```dart
 CircleLoader(
-  color: Colors.blue,              // Main spinner color
-  size: 50,                         // Size of the loader
-  duration: Duration(seconds: 2),  // Animation duration
-  borderWidth: 4,                  // Border thickness
-  animationCurve: Curves.linear,   // Animation curve
-  backgroundColor: Colors.grey,    // Background ring color (optional)
+  color: Colors.blue,
+  size: 50,
+  duration: Duration(seconds: 2),
+  borderWidth: 4,
+  animationCurve: Curves.linear,
+  backgroundColor: Colors.grey,
 )
 ```
+
+---
 
 ### 2. DotLoader
+
 ```dart
 DotLoader(
-  color: Colors.blue,              // Dot color
-  size: 15,                        // Individual dot size
+  color: Colors.blue,
+  size: 15,
   duration: Duration(milliseconds: 1400),
-  dotCount: 4,                     // Number of dots
-  spacing: 5,                      // Space between dots
+  dotCount: 4,
+  spacing: 5,
   animationCurve: Curves.easeInOut,
-  minScale: 0.4,                   // Minimum scale during animation
-  maxScale: 1.0,                   // Maximum scale during animation
+  minScale: 0.4,
+  maxScale: 1.0,
 )
 ```
 
+---
+
 ### 3. PulseLoader
+
 ```dart
 PulseLoader(
   color: Colors.blue,
   size: 50,
   duration: Duration(milliseconds: 1200),
-  pulseCount: 3,                   // Number of pulse rings
+  pulseCount: 3,
   animationCurve: Curves.easeOut,
-  maxRadius: 1.0,                  // Maximum radius multiplier
-  minOpacity: 0.0,                 // Minimum opacity of pulses
+  maxRadius: 1.0,
+  minOpacity: 0.0,
 )
 ```
 
+---
+
 ### 4. WaveLoader
+
 ```dart
 WaveLoader(
   color: Colors.blue,
   size: 50,
   duration: Duration(milliseconds: 1200),
-  waveCount: 3,                    // Number of wave elements
-  waveHeight: 0.5,                 // Wave height multiplier
+  waveCount: 3,
+  waveHeight: 0.5,
   animationCurve: Curves.linear,
-  borderRadius: 0.5,               // Border radius of wave elements
+  borderRadius: 0.5,
 )
 ```
 
+---
+
 ### 5. SpinningLoader
+
 ```dart
 SpinningLoader(
   color: Colors.blue,
   size: 50,
   duration: Duration(seconds: 2),
-  borderWidth: 3,                  // Spinner stroke width
+  borderWidth: 3,
   animationCurve: Curves.linear,
-  backgroundColor: Colors.grey,    // Background ring (optional)
-  arcLength: 3.14,                 // Length of rotating arc (0-2π)
+  backgroundColor: Colors.grey,
+  arcLength: 3.14,
 )
 ```
 
+---
+
 ### 6. BounceLoader
+
 ```dart
 BounceLoader(
   color: Colors.blue,
   size: 15,
   duration: Duration(milliseconds: 1400),
-  dotCount: 3,                     // Number of bouncing dots
+  dotCount: 3,
   animationCurve: Curves.easeInOut,
-  bounceHeight: 1.5,               // Height of bounce
-  opacityAnimation: true,          // Enable opacity animation
+  bounceHeight: 1.5,
+  opacityAnimation: true,
 )
 ```
 
+---
+
+## Media-Based Loaders
+
 ### 7. LogoLoader
+
 ```dart
 LogoLoader(
-  logo: Icon(Icons.flutter_dash, size: 40),  // Custom logo/widget
+  logo: Icon(Icons.flutter_dash, size: 40),
   backgroundColor: Colors.blue,
   size: 80,
   duration: Duration(seconds: 2),
-  arcThickness: 3,                 // Thickness of rotating arc
+  arcThickness: 3,
   animationCurve: Curves.linear,
-  ringColor: Colors.blue,          // Ring color (optional)
-  logoPadding: 12,                 // Padding around logo
+  ringColor: Colors.blue,
+  logoPadding: 12,
 )
 ```
 
+---
+
 ### 8. ImageLoader
+
 ```dart
 ImageLoader(
   image: NetworkImage('https://example.com/image.jpg'),
   loaderColor: Colors.blue,
   size: 80,
   duration: Duration(milliseconds: 1200),
-  borderWidth: 2,                  // Ring border width
+  borderWidth: 2,
   animationCurve: Curves.linear,
-  gradientColors: [Colors.blue, Colors.cyan],  // Custom gradient
+  gradientColors: [Colors.blue, Colors.cyan],
 )
 ```
 
+---
+
+## 📊 Linear & Skeleton Loaders
+
 ### 9. LinearLoader
+
 ```dart
 LinearLoader(
   backgroundColor: Color(0xFFE0E0E0),
@@ -115,15 +176,18 @@ LinearLoader(
   height: 6,
   borderRadius: 3,
   duration: Duration(seconds: 2),
-  showPercentage: true,            // Show percentage text
+  showPercentage: true,
   animationCurve: Curves.linear,
-  gradientColors: [Colors.blue, Colors.purple],  // Custom gradient
-  width: double.infinity,          // Width of progress bar
-  textStyle: TextStyle(color: Colors.blue),  // Custom text style
+  gradientColors: [Colors.blue, Colors.purple],
+  width: double.infinity,
+  textStyle: TextStyle(color: Colors.blue),
 )
 ```
 
+---
+
 ### 10. ShimmerLoader
+
 ```dart
 ShimmerLoader(
   width: double.infinity,
@@ -132,12 +196,15 @@ ShimmerLoader(
   highlightColor: Color(0xFFF5F5F5),
   duration: Duration(milliseconds: 1500),
   borderRadius: BorderRadius.all(Radius.circular(4)),
-  shimmerWidth: 0.3,               // Width of shimmer effect
+  shimmerWidth: 0.3,
   animationCurve: Curves.linear,
 )
 ```
 
+---
+
 ### 11. SkeletonLoader
+
 ```dart
 SkeletonLoader(
   items: [
@@ -145,7 +212,6 @@ SkeletonLoader(
       width: double.infinity,
       height: 16,
       margin: EdgeInsets.only(bottom: 12),
-      borderRadius: BorderRadius.all(Radius.circular(4)),
     ),
     SkeletonCircle(
       radius: 40,
@@ -160,40 +226,52 @@ SkeletonLoader(
 )
 ```
 
-## Common Customization Properties
+---
+
+## Common Customization Options
 
 ### Animation Curves
-- `Curves.linear` - Constant speed
-- `Curves.easeIn` - Slow start, fast end
-- `Curves.easeOut` - Fast start, slow end
-- `Curves.easeInOut` - Slow start and end
-- `Curves.bounceIn` - Bouncing effect
-- `Curves.elasticInOut` - Elastic effect
 
-### Color Customization
-- Use any Flutter `Color` or `ColorTween`
-- Apply gradients with `gradientColors` parameter
-- Adjust opacity with `withOpacity()`
+* `Curves.linear` – Constant speed
+* `Curves.easeInOut` – Smooth animation
+* `Curves.bounceIn` – Bouncy effect
+* `Curves.elasticInOut` – Elastic motion
 
-### Size & Dimension Control
-- Adjust `size` parameter for overall scale
-- Use `borderWidth`, `borderRadius` for fine-tuning
-- Control spacing with dedicated parameters
+---
 
-## Usage Examples
+### Color & Gradient
 
-### Custom Branded Loader with Logo
+* Use any Flutter `Color`
+* Apply gradients using `gradientColors`
+* Adjust opacity using `.withValues(alpha: ...)`
+
+---
+
+### Size & Layout
+
+* Control overall size with `size`
+* Fine-tune with `borderWidth`, `radius`, `spacing`
+* Use `double.infinity` for responsive layouts
+
+---
+
+## Real-World Usage Examples
+
+### Branded Loader
+
 ```dart
 LogoLoader(
   logo: Image.asset('assets/logo.png', width: 30),
   backgroundColor: Color(0xFF6200EE),
   size: 100,
   arcThickness: 4,
-  logoPadding: 15,
 )
 ```
 
-### Progress Bar with Custom Styling
+---
+
+### Styled Progress Bar
+
 ```dart
 LinearLoader(
   width: 250,
@@ -201,30 +279,31 @@ LinearLoader(
   showPercentage: true,
   loaderColor: Colors.green,
   gradientColors: [Colors.green, Colors.lightGreen],
-  borderRadius: 4,
-  textStyle: TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.bold,
-    color: Colors.green[700],
-  ),
-)
-```
-
-### Content Placeholder Skeleton
-```dart
-SkeletonLoader(
-  items: [
-    SkeletonCircle(radius: 35, margin: EdgeInsets.only(bottom: 16)),
-    SkeletonLine(height: 14, margin: EdgeInsets.only(bottom: 10)),
-    SkeletonLine(height: 14, margin: EdgeInsets.only(bottom: 10)),
-    SkeletonLine(width: 200, height: 14),
-  ],
-  baseColor: Colors.grey[300]!,
-  highlightColor: Colors.grey[100]!,
-  duration: Duration(milliseconds: 1200),
 )
 ```
 
 ---
 
-All loaders support complete customization for colors, sizes, durations, animations, and more! 🚀
+### Skeleton UI
+
+```dart
+SkeletonLoader(
+  items: [
+    SkeletonCircle(radius: 35),
+    SkeletonLine(height: 14),
+    SkeletonLine(height: 14),
+  ],
+)
+```
+
+---
+
+## Keywords (SEO Boost)
+
+flutter loader, flutter loading animation, flutter spinner, flutter progress indicator, flutter skeleton loader, flutter shimmer, flutter UI loading widget
+
+---
+
+All loaders are optimized for **smooth 60 FPS animations**, **zero dependencies**, and **full customization**.
+
+Build beautiful loading states effortlessly with Loader Pro Kit!

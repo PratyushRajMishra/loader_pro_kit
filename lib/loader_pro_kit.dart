@@ -1,6 +1,6 @@
-/// A comprehensive Flutter package with 11 beautiful, fully customizable loading animations.
+/// A comprehensive Flutter package with 12 beautiful, fully customizable loading animations.
 ///
-/// This package provides 11 different loader animations, each fully customizable
+/// This package provides 12 different loader animations, each fully customizable
 /// with support for colors, sizes, durations, and animation curves.
 ///
 /// **Circular Loaders:**
@@ -37,3 +37,4 @@ export 'src/loaders/image_loader.dart';
 export 'src/loaders/linear_loader.dart';
 export 'src/loaders/shimmer_loader.dart';
 export 'src/loaders/skeleton_loader.dart';
+export 'src/loaders/orbit_loader.dart';

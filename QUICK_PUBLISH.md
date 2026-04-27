@@ -25,9 +25,9 @@ Expected output: `00:00 +13: All tests passed!`
 ### Step 3: Verify pubspec.yaml
 Already updated with:
 - ✅ name: loader_pro_kit
-- ✅ version: 1.0.3
+- ✅ version: 1.1.0
 - ✅ description: Complete
-- ✅ homepage: https://github.com/pratyushmishra/loader-pro-kit
+- ✅ homepage: https://github.com/PratyushRajMishra/loader_pro_kit
 - ✅ repository: Added
 - ✅ issue_tracker: Added
 - ✅ documentation: Added
@@ -78,9 +78,9 @@ flutter pub publish
 
 You'll see:
 ```
-Publishing loader_pro_kit 1.0.0 to pub.dev:
+Publishing loader_pro_kit 1.1.0 to pub.dev:
 ...
-Do you want to publish loader_pro_kit 1.0.0 to pub.dev (y/n)?
+Do you want to publish loader_pro_kit 1.1.0 to pub.dev (y/n)?
 ```
 
 **Type:** `y` and press Enter
@@ -97,7 +97,7 @@ Do you want to publish loader_pro_kit 1.0.0 to pub.dev (y/n)?
    - ✅ Description shows
    - ✅ README renders properly
    - ✅ Documentation visible
-   - ✅ Version 1.0.0
+   - ✅ Version 1.1.0
 
 ### Step 9: Update Your Local Documentation
 ```bash
@@ -118,7 +118,7 @@ flutter pub add loader_pro_kit
 Or add manually:
 ```yaml
 dependencies:
-  loader_pro_kit: ^1.0.0
+  loader_pro_kit: ^1.1.0
 ```
 
 ---
@@ -126,7 +126,7 @@ dependencies:
 ## 🔗 Package Links (After Publishing)
 
 - **Pub.dev:** https://pub.dev/packages/loader_pro_kit
-- **GitHub:** https://github.com/pratyushmishra/loader-pro-kit
+- **GitHub:** https://github.com/PratyushRajMishra/loader_pro_kit
 - **Documentation:** https://pub.dev/documentation/loader_pro_kit/latest/
 - **API:** https://pub.dev/packages/loader_pro_kit/versions
 
@@ -141,7 +141,7 @@ dependencies:
 - ✅ Your description is 172 chars (max 180)
 
 ### "Missing homepage"
-- ✅ Added (https://github.com/pratyushmishra/loader-pro-kit)
+- ✅ Added (https://github.com/PratyushRajMishra/loader_pro_kit)
 
 ### "Analysis failed"
 ```bash
@@ -165,8 +165,8 @@ Before running `flutter pub publish`:
 - ✅ Code formatted: `flutter format lib/ test/ example/lib/`
 - ✅ Analysis clean: `dart analyze lib/` (no errors)
 - ✅ Tests passing: `flutter test` (all 13 passing)
-- ✅ pubspec.yaml updated (version 1.0.0, metadata filled)
-- ✅ CHANGELOG.md updated (version 1.0.0 entry)
+- ✅ pubspec.yaml updated (version 1.1.0, metadata filled)
+- ✅ CHANGELOG.md updated (version 1.1.0 entry)
 - ✅ README.md complete (examples, usage, docs)
 - ✅ LICENSE file present
 - ✅ No API keys/secrets in code
@@ -206,7 +206,7 @@ flutter pub publish
 ## 📈 After Your Package Goes Live
 
 ### Share the News! 📢
-- Tweet: "Just published Loader Pro Kit on pub.dev! 11 beautiful Flutter loaders: https://pub.dev/packages/loader_pro_kit #flutter #flutterdev"
+- Tweet: "Just published Loader Pro Kit on pub.dev! 12 beautiful Flutter loaders: https://pub.dev/packages/loader_pro_kit #flutter #flutterdev"
 - Reddit: r/flutter
 - Discord: Flutter developer communities
 - LinkedIn: Share your achievement
@@ -232,7 +232,7 @@ When you add features:
 Your **Loader Pro Kit** is about to be published! 
 
 This is a high-quality package with:
-- ✅ 11 beautiful loaders
+- ✅ 12 beautiful loaders
 - ✅ Full customization
 - ✅ Production-ready code
 - ✅ Complete documentation
@@ -247,4 +247,3 @@ This is a high-quality package with:
 ```bash
 cd /Users/pratyushmishra/loader_pro_kit && flutter pub publish
 ```
-

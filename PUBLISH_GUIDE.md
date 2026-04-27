@@ -14,11 +14,11 @@
 
 ```yaml
 name: loader_pro_kit
-description: "A comprehensive Flutter package with 11 beautiful, fully customizable loading animations. Perfect for modern app UIs with smooth 60 FPS animations."
-version: 1.0.3
-homepage: https://github.com/YOUR_USERNAME/loader-pro-kit
-repository: https://github.com/YOUR_USERNAME/loader-pro-kit
-issue_tracker: https://github.com/YOUR_USERNAME/loader-pro-kit/issues
+description: "A comprehensive Flutter package with 12 beautiful, fully customizable loading animations. Perfect for modern app UIs with smooth 60 FPS animations."
+version: 1.1.0
+homepage: https://github.com/YOUR_USERNAME/loader_pro_kit
+repository: https://github.com/YOUR_USERNAME/loader_pro_kit
+issue_tracker: https://github.com/YOUR_USERNAME/loader_pro_kit/issues
 documentation: https://pub.dev/packages/loader_pro_kit
 
 environment:
@@ -45,24 +45,12 @@ flutter:
 ### 3. Update CHANGELOG.md
 
 ```markdown
-## 1.0.0
-- Initial release
-- 11 fully customizable loaders:
-  - CircleLoader - Rotating circle spinner
-  - DotLoader - Animated scaling dots
-  - PulseLoader - Expanding circular pulses
-  - WaveLoader - Wave motion animation
-  - SpinningLoader - Rotating arc spinner
-  - BounceLoader - Bouncing ball animation
-  - LogoLoader - Brand logo loading indicator
-  - ImageLoader - Circular image with animated border
-  - LinearLoader - Progress bar with percentage
-  - ShimmerLoader - Skeleton shimmer effect
-  - SkeletonLoader - Complex placeholder loading
-- Complete customization support for colors, sizes, durations, and animation curves
-- Production-ready with smooth 60 FPS animations
-- Comprehensive documentation and examples
-- Complete test coverage
+## 1.1.0
+- Added OrbitLoader (dynamic orbit-style loading animation)
+- Added gradient, glow, and elliptical options for OrbitLoader
+- Updated example app with OrbitLoader showcase
+- Improved documentation and publication guides
+- No breaking changes
 ```
 
 ### 4. Verify pubspec.yaml Requirements

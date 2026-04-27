@@ -1,238 +1,267 @@
-# Loader Pro Kit - Complete Package Summary
+# 🚀 Loader Pro Kit - Complete Package Summary
 
-## ✅ Fixed Issues
-
-### 1. Test Errors - RESOLVED ✓
-**Problem:** The `test/loader_pro_kit_test.dart` file was testing an old `Calculator` class that no longer exists.
-
-**Solution:** 
-- Rewrote all 13 comprehensive widget tests
-- Tests now verify all 11 loaders render correctly
-- Tests check custom properties, animations, and proper disposal
-- All tests pass with ✅ status
-
-### 2. LinearLoader Issue - RESOLVED ✓
-**Problem:** `double.infinity * value` caused layout errors
-
-**Solution:**
-- Replaced fixed width calculation with `FractionallySizedBox`
-- Now properly handles both fixed widths and `double.infinity`
-- Animations work smoothly without layout errors
+A modern Flutter package providing **high-performance, fully customizable loading animations** for production apps.
 
 ---
 
-## 📚 Complete Documentation Updated
+## Version 1.1.0 Highlights
 
-### README.md - COMPLETE ✓
-- ✅ Comprehensive feature overview
-- ✅ Installation instructions
-- ✅ Quick start guide
-- ✅ All 11 loader examples
-- ✅ Advanced customization options
-- ✅ Common use cases
-- ✅ Theme examples
-- ✅ Performance notes
-- ✅ Troubleshooting guide
-- ✅ Video demo links (ready for users to add their own videos)
+### OrbitLoader (New Premium Loader)
 
-### CUSTOMIZATION_GUIDE.md - COMPLETE ✓
-- ✅ Individual parameter documentation for each loader
-- ✅ Common customization properties
-- ✅ Animation curves reference
-- ✅ Usage examples
-- ✅ Theme variations
+* Circular & elliptical orbit animations
+* Gradient color support
+* Glow effects
+* Scale & opacity animation
+* Reverse direction support
+* Smooth physics-based motion
 
 ---
 
-## 🎥 Video Integration Guide
+### OrbitLoader Configuration (New)
 
-Users can add demo videos to the README by:
+Recommended parameter combinations for faster usage:
 
-### Method 1: Upload to YouTube
-1. Create demo videos of each loader
-2. Upload to YouTube
-3. Create a playlist
-4. Add link: `https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID`
-
-### Method 2: Use GitHub Releases
-1. Record videos as .mp4
-2. Upload to GitHub Releases
-3. Add media links in README
-
-### Method 3: Use GIF Demos
-```markdown
-![CircleLoader](assets/circle-loader.gif)
-![DotLoader](assets/dot-loader.gif)
+```dart
+OrbitLoader(
+  size: 84,
+  dotCount: 8,
+  radius: 30,
+  dotSize: 9,
+  glowEffect: true,
+  useGradient: true,
+  gradientColors: const [Colors.blue, Colors.cyan],
+)
 ```
 
+👉 Reduces setup time and improves developer experience
+
 ---
 
-## 📦 Project Structure
+## Issues Fixed
 
-```
+### ✔ Animation Not Updating
+
+* Fixed in `BounceLoader` & `WaveLoader`
+* Implemented `AnimatedBuilder` for proper frame updates
+
+---
+
+### ✔ LinearLoader Layout Bug
+
+* Replaced width calculation with `FractionallySizedBox`
+* Fixed `double.infinity` handling
+
+---
+
+### ✔ Deprecated API Fix
+
+* Replaced `withOpacity()` → `.withValues(alpha: ...)`
+* Future-proof and more precise
+
+---
+
+### ✔ Test Suite Cleanup
+
+* Removed outdated `Calculator` tests
+* Added full widget-based testing
+
+---
+
+## Project Structure
+
+```bash
 loader_pro_kit/
 ├── lib/
-│   ├── loader_pro_kit.dart                 (Main export file)
+│   ├── loader_pro_kit.dart
 │   └── src/loaders/
-│       ├── circle_loader.dart              ✓ Customizable
-│       ├── dot_loader.dart                 ✓ Customizable
-│       ├── pulse_loader.dart               ✓ Customizable
-│       ├── wave_loader.dart                ✓ Customizable
-│       ├── spinning_loader.dart            ✓ Customizable
-│       ├── bounce_loader.dart              ✓ Customizable
-│       ├── logo_loader.dart                ✓ Customizable
-│       ├── image_loader.dart               ✓ Customizable
-│       ├── linear_loader.dart              ✓ Customizable
-│       ├── shimmer_loader.dart             ✓ Customizable
-│       └── skeleton_loader.dart            ✓ Customizable
+│       ├── circle_loader.dart
+│       ├── dot_loader.dart
+│       ├── pulse_loader.dart
+│       ├── wave_loader.dart
+│       ├── spinning_loader.dart
+│       ├── bounce_loader.dart
+│       ├── logo_loader.dart
+│       ├── image_loader.dart
+│       ├── linear_loader.dart
+│       ├── shimmer_loader.dart
+│       ├── skeleton_loader.dart
+│       └── orbit_loader.dart        🆕 v1.1.0
+│
 ├── test/
-│   └── loader_pro_kit_test.dart            ✅ All tests passing
+│   └── loader_pro_kit_test.dart     ✅ All tests passing
+│
 ├── example/
-│   ├── lib/main.dart                       ✓ Full demo app
-│   ├── pubspec.yaml
-│   └── analysis_options.yaml
-├── README.md                               ✅ Complete
-├── CUSTOMIZATION_GUIDE.md                  ✅ Complete
-├── CHANGELOG.md
-├── LICENSE
-└── pubspec.yaml
+│   └── lib/main.dart                ✅ Full demo app
 ```
 
 ---
 
-## 🎨 All 11 Loaders - Status
+## Loaders Overview (12 Total)
 
-| Loader | Status | Customizable | Tests | Documentation |
-|--------|--------|--------------|-------|-----------------|
-| 1. CircleLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 2. DotLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 3. PulseLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 4. WaveLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 5. SpinningLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 6. BounceLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 7. LogoLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 8. ImageLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 9. LinearLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 10. ShimmerLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
-| 11. SkeletonLoader | ✅ Complete | ✓ Full | ✓ Passing | ✓ Complete |
+| Loader          | Type              | Status |
+| --------------- | ----------------- | ------ |
+| CircleLoader    | Spinner           | ✅      |
+| DotLoader       | Animated dots     | ✅      |
+| PulseLoader     | Expanding rings   | ✅      |
+| WaveLoader      | Wave motion       | ✅      |
+| SpinningLoader  | Arc spinner       | ✅      |
+| BounceLoader    | Bounce animation  | ✅      |
+| LogoLoader      | Brand loader      | ✅      |
+| ImageLoader     | Image-based       | ✅      |
+| LinearLoader    | Progress bar      | ✅      |
+| ShimmerLoader   | Skeleton shimmer  | ✅      |
+| SkeletonLoader  | UI placeholder    | ✅      |
+| **OrbitLoader** | Premium animation | 🆕     |
 
 ---
 
-## ✨ Key Features Summary
+## Core Features
 
-### Customization Options
-Each loader supports:
-- ✅ **Colors** - Main color, background color, gradient colors
-- ✅ **Sizes** - Individual size control
-- ✅ **Duration** - Animation speed control
-- ✅ **Animation Curves** - Linear, easeIn, easeOut, easeInOut, bounce, elastic, etc.
-- ✅ **Advanced Parameters** - Specific to each loader type
+### Full Customization
 
-### Performance
-- ✅ Smooth 60 FPS animations
-- ✅ Minimal memory footprint
-- ✅ Efficient paint operations
-- ✅ Proper resource disposal
-- ✅ No frame drops with multiple loaders
+* Colors & gradients
+* Sizes & spacing
+* Animation duration
+* Animation curves
+* Advanced parameters per loader
+
+---
+
+### Performance Optimized
+
+* Smooth 60 FPS animations
+* Efficient rendering pipeline
+* Minimal rebuilds using `AnimatedBuilder`
+* Memory-safe (proper disposal)
+
+---
 
 ### Quality Assurance
-- ✅ 13 comprehensive widget tests
-- ✅ All tests passing
-- ✅ Error handling verified
-- ✅ Memory leak testing included
-- ✅ Edge case coverage
+
+* Widget-based test coverage
+* Animation behavior verified
+* No regressions in updates
+* Stable across platforms
 
 ---
 
-## 🚀 Running the Package
+## Demo Integration
 
-### Local Development
-```bash
-cd /Users/pratyushmishra/loader_pro_kit
-flutter pub get
-flutter test               # Run tests
-```
+### Recommended (Best for pub.dev)
 
-### Run Example App
-```bash
-cd example
-flutter pub get
-flutter run               # For Android device or emulator
-```
+#### GIF Previews
 
-### Run on Android Device
-```bash
-cd example
-flutter run
-```
-
----
-
-## 📝 Files Checklist
-
-- ✅ `/lib/loader_pro_kit.dart` - Main export file (updated)
-- ✅ `/lib/src/loaders/` - 11 fully customizable loaders
-- ✅ `/test/loader_pro_kit_test.dart` - 13 passing tests
-- ✅ `/example/lib/main.dart` - Complete demo app
-- ✅ `/example/pubspec.yaml` - Example dependencies
-- ✅ `README.md` - Comprehensive documentation
-- ✅ `CUSTOMIZATION_GUIDE.md` - Detailed API reference
-- ✅ `pubspec.yaml` - Package definition
-
----
-
-## 🎥 How to Add Videos
-
-### Step 1: Record Demo Videos
-Record videos (.mp4 format) showing each loader in action:
-- CircleLoader demo (3-5 seconds)
-- DotLoader demo (3-5 seconds)
-- PulseLoader demo (3-5 seconds)
-- Etc.
-
-### Step 2: Create Playlist
-- Upload to YouTube
-- Create playlist: "Loader Pro Kit Demos"
-- Get playlist URL
-
-### Step 3: Update README
-Replace this section in README.md:
 ```markdown
-## 🎥 Demo Videos
-
-### Youtube Demo Playlist
-https://www.youtube.com/playlist?list=PLxxxxx
+![OrbitLoader](assets/orbit-loader.gif)
 ```
 
-With your actual playlist link.
+#### YouTube Playlist
+
+```text
+https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID
+```
 
 ---
 
-## 🎉 Ready for Production
+## Getting Started
 
-This package is now:
-- ✅ **Feature Complete** - All 11 loaders implemented
-- ✅ **Fully Customizable** - Every aspect adjustable
-- ✅ **Well Tested** - All tests passing
-- ✅ **Well Documented** - Complete guides included
-- ✅ **Production Ready** - Smooth, performant animations
-- ✅ **Error Free** - All issues resolved
+### Install
+
+```bash
+flutter pub add loader_pro_kit
+```
 
 ---
 
-## 📱 Next Steps for Users
+### Import
 
-1. Install the package: `flutter pub add loader_pro_kit`
-2. Import: `import 'package:loader_pro_kit/loader_pro_kit.dart';`
-3. Use any of the 11 loaders
-4. Customize as needed
-5. Enjoy smooth loading animations! 🚀
+```dart
+import 'package:loader_pro_kit/loader_pro_kit.dart';
+```
 
 ---
 
-**Package Version:** 0.0.1  
-**Status:** ✅ Complete and Ready  
-**Last Updated:** 2026-04-11  
-**Author:** Pratyush Mishra
+### Example Usage
 
-**Happy Loading! 🎉**
+```dart
+OrbitLoader(
+  dotCount: 6,
+  size: 72,
+  color: Colors.blue,
+)
+```
+
+---
+
+## Files Checklist
+
+* 12 loaders implemented
+* OrbitLoader added
+* Tests updated & passing
+* Example app updated
+* README optimized
+* CHANGELOG updated (v1.1.0)
+* Documentation complete
+
+---
+
+## Use Cases
+
+* Splash screens
+* API loading states
+* Skeleton UI placeholders
+* Progress indicators
+* Branded loaders
+* Chat & social apps
+
+---
+
+## Production Readiness
+
+This package is:
+
+* Feature-rich
+* Fully customizable
+* Performance optimized
+* Developer-friendly
+* SEO optimized
+* Production ready
+
+---
+
+## Package Info
+
+* **Version:** 1.1.0
+* **Flutter SDK:** 3.41+
+* **Dart SDK:** 3.11+
+* **License:** MIT
+* **Dependencies:** None
+
+---
+
+## Roadmap (Next Updates)
+
+* TypingLoader (chat-style animation)
+* EqualizerLoader (audio bars)
+* LoaderSwitcher (dynamic loader switching)
+* Built-in themes system
+
+---
+
+## Pro Tips
+
+* Use reusable `OrbitLoader` parameter sets for quick UI
+* Combine with **SkeletonLoader** for best UX
+* Prefer **ShimmerLoader** for list loading states
+
+---
+
+## Final Status
+
+Loader Pro Kit is now a **complete, scalable, and production-grade Flutter animation library**
+
+Ready to grow on pub.dev and be used in real-world apps
+
+---
+
+**Happy Coding! **
