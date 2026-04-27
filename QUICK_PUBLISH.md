@@ -25,7 +25,7 @@ Expected output: `00:00 +13: All tests passed!`
 ### Step 3: Verify pubspec.yaml
 Already updated with:
 - ✅ name: loader_pro_kit
-- ✅ version: 1.0.0
+- ✅ version: 1.0.3
 - ✅ description: Complete
 - ✅ homepage: https://github.com/pratyushmishra/loader-pro-kit
 - ✅ repository: Added

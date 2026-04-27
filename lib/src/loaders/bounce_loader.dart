@@ -56,35 +56,42 @@ class _BounceLoaderState extends State<BounceLoader>
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: widget.size * (2 + widget.bounceHeight),
-      width: widget.size * (widget.dotCount + 2),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: List.generate(
-          widget.dotCount,
-          (index) => Transform.translate(
-            offset: Offset(
-              0,
-              -widget.size *
-                  widget.bounceHeight *
-                  math.sin((_controller.value * 2 * math.pi) + (index * 0.5)),
-            ),
-            child: Container(
-              width: widget.size,
-              height: widget.size,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: widget.opacityAnimation
-                    ? widget.color.withValues(
-                        alpha: 0.6 + 0.4 * index / widget.dotCount,
-                      )
-                    : widget.color,
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return SizedBox(
+          height: widget.size * (2 + widget.bounceHeight),
+          width: widget.size * (widget.dotCount + 2),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: List.generate(
+              widget.dotCount,
+              (index) => Transform.translate(
+                offset: Offset(
+                  0,
+                  -widget.size *
+                      widget.bounceHeight *
+                      math.sin(
+                        (_controller.value * 2 * math.pi) + (index * 0.5),
+                      ),
+                ),
+                child: Container(
+                  width: widget.size,
+                  height: widget.size,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: widget.opacityAnimation
+                        ? widget.color.withValues(
+                            alpha: 0.6 + 0.4 * index / widget.dotCount,
+                          )
+                        : widget.color,
+                  ),
+                ),
               ),
             ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }

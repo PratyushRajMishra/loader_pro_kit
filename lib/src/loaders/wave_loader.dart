@@ -55,39 +55,45 @@ class _WaveLoaderState extends State<WaveLoader>
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: widget.size * widget.waveCount,
-      height: widget.size,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: List.generate(
-          widget.waveCount,
-          (index) => Transform.translate(
-            offset: Offset(
-              0,
-              -widget.size /
-                  2 *
-                  widget.waveHeight *
-                  (1 -
-                      ((_controller.value * 2 - index / widget.waveCount * 2)
-                                      .abs() %
-                                  2 -
-                              1)
-                          .abs()),
-            ),
-            child: Container(
-              width: widget.size * 0.6,
-              height: widget.size,
-              decoration: BoxDecoration(
-                color: widget.color,
-                borderRadius: BorderRadius.circular(
-                  widget.size * widget.borderRadius,
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return SizedBox(
+          width: widget.size * widget.waveCount,
+          height: widget.size,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: List.generate(
+              widget.waveCount,
+              (index) => Transform.translate(
+                offset: Offset(
+                  0,
+                  -widget.size /
+                      2 *
+                      widget.waveHeight *
+                      (1 -
+                          ((_controller.value * 2 -
+                                              index / widget.waveCount * 2)
+                                          .abs() %
+                                      2 -
+                                  1)
+                              .abs()),
+                ),
+                child: Container(
+                  width: widget.size * 0.6,
+                  height: widget.size,
+                  decoration: BoxDecoration(
+                    color: widget.color,
+                    borderRadius: BorderRadius.circular(
+                      widget.size * widget.borderRadius,
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }

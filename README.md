@@ -1,8 +1,8 @@
-# Loader Pro Kit 🚀
+# Loader Pro Kit
 
 A comprehensive Flutter package with **11 beautiful, fully customizable loading animations**. Perfect for any app that needs modern, smooth, and professional loading indicators.
 
-## 📦 What's Included
+## What's Included
 
 ### Circular Loaders
 - **CircleLoader** - Classic rotating circle spinner
@@ -19,7 +19,7 @@ A comprehensive Flutter package with **11 beautiful, fully customizable loading 
 - **ShimmerLoader** - Skeleton/placeholder shimmer effect
 - **SkeletonLoader** - Complex content placeholder loading
 
-## 🎥 Demo Video
+## Demo Video
 
 <div align="center">
   <img 
@@ -98,18 +98,18 @@ Complex multi-item skeleton loading with shimmer.
 Ideal for card or list item placeholders.
 ```
 
-## ✨ Features
+## Features
 
-✅ **11 Unique Loader Designs** - Various animation styles  
-✅ **Fully Customizable** - Colors, sizes, durations, animation curves  
-✅ **Production Ready** - Smooth, performant animations  
-✅ **Zero Dependencies** - Uses only Flutter/Dart  
-✅ **Easy to Use** - Simple API, intuitive parameters  
-✅ **Well Documented** - Complete customization guide included  
-✅ **Responsive** - Works on all screen sizes  
-✅ **Tested** - Comprehensive widget tests included  
+**11 Unique Loader Designs** - Various animation styles  
+**Fully Customizable** - Colors, sizes, durations, animation curves  
+**Production Ready** - Smooth, performant animations  
+**Zero Dependencies** - Uses only Flutter/Dart  
+**Easy to Use** - Simple API, intuitive parameters  
+**Well Documented** - Complete customization guide included  
+**Responsive** - Works on all screen sizes  
+**Tested** - Comprehensive widget tests included  
 
-## 📥 Installation
+## Installation
 
 Add this line to your `pubspec.yaml`:
 
@@ -123,7 +123,7 @@ Then run:
 flutter pub get
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Basic Usage
 
@@ -231,7 +231,7 @@ SkeletonLoader(
 )
 ```
 
-## 🎨 Advanced Customization
+## Advanced Customization
 
 ### CircleLoader
 ```dart
@@ -386,7 +386,7 @@ SkeletonLoader(
 )
 ```
 
-## 🎯 Common Use Cases
+## Common Use Cases
 
 ### Loading Screen
 ```dart
@@ -457,7 +457,7 @@ Curves.elasticInOut  // Elastic effect
 Curves.fastOutSlowIn // Fast then slow
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the included tests:
 
@@ -466,11 +466,11 @@ flutter test
 ```
 
 Tests verify:
-- ✅ All 11 loaders render correctly
-- ✅ Custom properties are applied
-- ✅ Animation controllers work properly
-- ✅ Widgets dispose correctly
-- ✅ No memory leaks
+- All 11 loaders render correctly
+- Custom properties are applied
+- Animation controllers work properly
+- Widgets dispose correctly
+- No memory leaks
 
 ## 📱 Running the Example
 
@@ -482,7 +482,7 @@ flutter run
 
 The example app displays all 11 loaders with interactive demonstrations.
 
-## 🎨 Theme Examples
+## Theme Examples
 
 ### Pastel Theme
 ```dart
@@ -519,15 +519,15 @@ SpinningLoader(
 )
 ```
 
-## 📈 Performance
+## Performance
 
-- ✅ Smooth 60 FPS animations
-- ✅ Minimal memory footprint
-- ✅ Efficient paint operations
-- ✅ Proper disposal of controllers
-- ✅ No frame drops even with multiple loaders
+- Smooth 60 FPS animations
+- Minimal memory footprint
+- Efficient paint operations
+- Proper disposal of controllers
+- No frame drops even with multiple loaders
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Loader not animating?
 - Ensure the widget is inside a `Scaffold` or similar container
@@ -541,24 +541,24 @@ SpinningLoader(
 - Reduce the number of simultaneous loaders
 - Increase duration for smoother animations
 
-## 📝 Documentation
+## Documentation
 
 See [CUSTOMIZATION_GUIDE.md](CUSTOMIZATION_GUIDE.md) for complete API documentation with all parameters and options.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 🌟 Star Us
+## Star Us
 
-If you find this package useful, please give it a star on GitHub! ⭐
+If you find this package useful, please give it a star on GitHub! 
 
 ---
 
-**Made with ❤️ by Pratyush Mishra**
+**Made with by Pratyush Mishra**
 
-**Happy Loading! 🚀**
+**Happy Loading! **

@@ -31,7 +31,7 @@
 ### Check 1: Verify pubspec.yaml
 ```yaml
 name: loader_pro_kit
-version: 1.0.0
+version: 1.0.3
 description: "A comprehensive Flutter package with 11 beautiful, fully customizable loading animations. Perfect for modern app UIs with smooth 60 FPS animations."
 homepage: https://github.com/pratyushmishra/loader-pro-kit
 repository: https://github.com/pratyushmishra/loader-pro-kit
