@@ -26,7 +26,7 @@ loader_pro_kit/
 │       ├── linear_loader.dart         ✅ Fully customizable
 │       ├── shimmer_loader.dart        ✅ Fully customizable
 │       ├── skeleton_loader.dart       ✅ Fully customizable
-│       ├── orbit_loader.dart          ✅ Premium dynamic loader (v1.1.0)
+│       └── orbit_loader.dart          ✅ Premium dynamic loader (v1.2.0)
 │       ├── liquid_fill_loader.dart    🆕 Advanced wave animation (v1.2.0)
 │       └── doc/videos/loader.webm     📹 Demo video (v1.2.0)
 │
@@ -103,9 +103,9 @@ loader_pro_kit/
 
 ---
 
-## 📦 New Additions (v1.1.0)
+## 📦 New Additions (v1.2.0)
 
-### 🌀 OrbitLoader
+### 🌀 OrbitLoader + LiquidFillLoader
 
 * Premium orbit-style animation
 * Gradient + glow effects
@@ -135,7 +135,7 @@ Use these parameters to create different visual styles without preset constructo
 
 * All widget tests passing ✅
 * Animation behavior verified
-* No regressions after v1.1.0 update
+* No regressions after v1.2.0 update
 * Ready for production use
 
 ---
@@ -175,7 +175,7 @@ Use these parameters to create different visual styles without preset constructo
 | Documentation | ✅ Fully updated              |
 | Demo App      | ✅ Enhanced                   |
 | pubspec.yaml  | ✅ Updated                    |
-| CHANGELOG.md  | ✅ v1.1.0 added               |
+| CHANGELOG.md  | ✅ v1.2.0 added               |
 | Code Quality  | ✅ Clean & optimized          |
 | Analysis      | ✅ No issues                  |
 

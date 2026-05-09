@@ -15,7 +15,7 @@
 ```yaml
 name: loader_pro_kit
 description: "A comprehensive Flutter package with 12 beautiful, fully customizable loading animations. Perfect for modern app UIs with smooth 60 FPS animations."
-version: 1.1.0
+version: 1.2.0
 homepage: https://github.com/YOUR_USERNAME/loader_pro_kit
 repository: https://github.com/YOUR_USERNAME/loader_pro_kit
 issue_tracker: https://github.com/YOUR_USERNAME/loader_pro_kit/issues
@@ -45,12 +45,16 @@ flutter:
 ### 3. Update CHANGELOG.md
 
 ```markdown
+## 1.2.0
+- Added comprehensive API documentation for all 13 loaders
+- Added dartdoc comments to 100+ constructor parameters
+- Added professional demo video (loader.webm)
+- Improved pub.dev score from 150 to 160 points
+- Added LiquidFillLoader demo video
+
 ## 1.1.0
 - Added OrbitLoader (dynamic orbit-style loading animation)
 - Added gradient, glow, and elliptical options for OrbitLoader
-- Updated example app with OrbitLoader showcase
-- Improved documentation and publication guides
-- No breaking changes
 ```
 
 ### 4. Verify pubspec.yaml Requirements

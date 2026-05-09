@@ -19,6 +19,13 @@
   * Added parameter-level documentation for 100+ API elements
   * Better support for pub.dev scoring and code quality metrics
 
+### Demo & Media
+
+* **Professional Demo Video** – Added loader.webm showcasing all 13 loaders
+  * High-quality animation demonstration
+  * Integrated into README.md for GitHub and pub.dev
+  * WebM format for optimal streaming
+
 ### Loaders with New Documentation
 
 * BounceLoader

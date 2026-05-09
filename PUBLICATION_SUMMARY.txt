@@ -53,7 +53,7 @@ Documentation:      Complete ✅
 * ⭐ Improved pub.dev score: 150 → 160 points
 * 🎯 100% pub.dev guideline compliance
 
-✅ Previous Features (v1.1.0)
+✅ Previous Features (v1.2.0)
 
 * 🌀 OrbitLoader (dynamic animation)
 * 🎨 Advanced OrbitLoader customization options
@@ -144,7 +144,7 @@ bash PUBLISH.sh
 5. Press Enter
 6. Wait for upload
 
-🎉 SUCCESS: loader_pro_kit 1.1.0 published!
+🎉 SUCCESS: loader_pro_kit 1.2.0 published!
 
 ================================================================================
 🔍 AFTER PUBLICATION
@@ -153,7 +153,8 @@ bash PUBLISH.sh
 👉 https://pub.dev/packages/loader_pro_kit
 
 Check:
-✅ Version 1.1.0 visible
+✅ Version 1.2.0 visible
+✅ Demo video playing on GitHub & pub.dev
 ✅ OrbitLoader appears
 ✅ README renders properly
 ✅ Example works

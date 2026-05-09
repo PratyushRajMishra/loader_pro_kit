@@ -94,7 +94,8 @@ loader_pro_kit/
 │       ├── linear_loader.dart
 │       ├── shimmer_loader.dart
 │       ├── skeleton_loader.dart
-│       ├── orbit_loader.dart        ✅ v1.1.0
+│       ├── orbit_loader.dart        ✅ v1.2.0
+│       └── liquid_fill_loader.dart  🆕 v1.2.0
 │       └── liquid_fill_loader.dart  🆕 v1.2.0
 │
 ├── test/
@@ -210,7 +211,7 @@ OrbitLoader(
 * Tests updated & passing
 * Example app updated
 * README optimized
-* CHANGELOG updated (v1.1.0)
+* CHANGELOG updated (v1.2.0)
 * Documentation complete
 
 ---
@@ -241,7 +242,7 @@ This package is:
 
 ## Package Info
 
-* **Version:** 1.1.0
+* **Version:** 1.2.0
 * **Flutter SDK:** 3.41+
 * **Dart SDK:** 3.11+
 * **License:** MIT

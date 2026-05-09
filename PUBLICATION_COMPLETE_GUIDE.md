@@ -1,4 +1,4 @@
-# Complete Guide: Publishing Loader Pro Kit to pub.dev (v1.1.0)
+# Complete Guide: Publishing Loader Pro Kit to pub.dev (v1.2.0)
 
 A step-by-step guide to successfully publish and grow your Flutter package on pub.dev.
 
@@ -31,13 +31,13 @@ Your account is now linked and ready to publish
 
 ---
 
-## Pre-Publication Checks (v1.1.0)
+## Pre-Publication Checks (v1.2.0)
 
 ### 1. Verify pubspec.yaml
 
 ```yaml
 name: loader_pro_kit
-version: 1.1.0
+version: 1.2.0
 description: "A modern Flutter package with 12 customizable loaders including OrbitLoader, shimmer, skeleton, and progress animations."
 homepage: https://github.com/PratyushRajMishra/loader_pro_kit
 repository: https://github.com/PratyushRajMishra/loader_pro_kit
@@ -131,7 +131,7 @@ flutter pub publish
 ### Confirm:
 
 ```
-Do you want to publish loader_pro_kit 1.1.0 (y/n)?
+Do you want to publish loader_pro_kit 1.2.0 (y/n)?
 ```
 
 Type `y`
@@ -141,7 +141,7 @@ Type `y`
 ### Success Output:
 
 ```
-Successfully published loader_pro_kit 1.1.0!
+Successfully published loader_pro_kit 1.2.0!
 ```
 
 Your package is live!
@@ -188,7 +188,7 @@ OrbitLoader(
 ### Twitter / X
 
 ```
-Just published Loader Pro Kit v1.1.0
+Just published Loader Pro Kit v1.2.0
 
 12 Flutter loaders
 New OrbitLoader (premium animation)
@@ -207,7 +207,7 @@ https://pub.dev/packages/loader_pro_kit
 
 **Title:**
 
-> Loader Pro Kit v1.1.0 – 12 Beautiful Flutter Loaders + Orbit Animation
+> Loader Pro Kit v1.2.0 – 13 Beautiful Flutter Loaders + Comprehensive Documentation
 
 **Highlights:**
 
