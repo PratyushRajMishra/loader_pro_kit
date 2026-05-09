@@ -4,7 +4,11 @@ A professional Flutter loading animation package for modern mobile and web appli
 
 ## Demo
 
-<video src="https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/doc/videos/loader.webm" width="320" height="640" controls></video>
+<div align="center">
+  <video src="doc/videos/loader.webm" width="320" height="640" controls muted></video>
+  
+  **Loader Pro Kit - 13 Beautiful Loading Animations**
+</div>
 
 Or view the demo GIF:
 
