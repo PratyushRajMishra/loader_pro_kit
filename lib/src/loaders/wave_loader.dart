@@ -13,12 +13,25 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class WaveLoader extends StatefulWidget {
+  /// The color of the wave elements.
   final Color color;
+
+  /// The size of each wave element.
   final double size;
+
+  /// The duration of the wave animation.
   final Duration duration;
+
+  /// The number of wave elements to display.
   final int waveCount;
+
+  /// The height multiplier for the wave motion.
   final double waveHeight;
+
+  /// The animation curve for the wave motion.
   final Curve animationCurve;
+
+  /// The border radius of each wave element.
   final double borderRadius;
 
   const WaveLoader({

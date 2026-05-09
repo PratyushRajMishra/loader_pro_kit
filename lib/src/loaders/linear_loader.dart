@@ -13,15 +13,34 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class LinearLoader extends StatefulWidget {
+  /// The background color of the progress bar.
   final Color backgroundColor;
+
+  /// The color of the filling progress bar.
   final Color loaderColor;
+
+  /// The height of the progress bar.
   final double height;
+
+  /// The border radius of the progress bar corners.
   final double borderRadius;
+
+  /// The duration of the progress animation.
   final Duration duration;
+
+  /// Whether to display the percentage text.
   final bool showPercentage;
+
+  /// The animation curve for the progress.
   final Curve animationCurve;
+
+  /// Optional gradient colors for the progress bar.
   final List<Color>? gradientColors;
+
+  /// The width of the progress bar.
   final double width;
+
+  /// Optional text style for the percentage display.
   final TextStyle? textStyle;
 
   const LinearLoader({

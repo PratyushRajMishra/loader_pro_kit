@@ -14,13 +14,28 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class LogoLoader extends StatefulWidget {
+  /// The widget to display as the logo (typically an Icon or Image).
   final Widget logo;
+
+  /// The background color of the loader.
   final Color backgroundColor;
+
+  /// The size of the loader widget.
   final double size;
+
+  /// The duration of the rotation animation.
   final Duration duration;
+
+  /// The thickness of the rotating arc.
   final double arcThickness;
+
+  /// The animation curve for the rotation.
   final Curve animationCurve;
+
+  /// Optional color for the rotating ring.
   final Color? ringColor;
+
+  /// The padding around the logo.
   final double logoPadding;
 
   const LogoLoader({

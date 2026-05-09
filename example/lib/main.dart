@@ -216,6 +216,82 @@ class _LoaderDemoPageState extends State<LoaderDemoPage> {
                 ),
               ),
               const SizedBox(height: 50),
+
+              // ===== LIQUID FILL LOADERS =====
+              const _SectionTitle(title: 'Liquid Fill Loaders'),
+
+              _LoaderCard(
+                title: 'Liquid Fill Loader (Default)',
+                child: LiquidFillLoader(
+                  size: 80,
+                  value: 0.65,
+                  waveColor: Colors.blue,
+                  showPercentage: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Liquid Fill Loader (Gradient)',
+                child: LiquidFillLoader(
+                  size: 100,
+                  value: 0.75,
+                  gradient: const LinearGradient(
+                    colors: [Colors.blue, Colors.cyan],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderColor: Colors.blue,
+                  glowEffect: true,
+                  showPercentage: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Liquid Fill Loader (Rounded)',
+                child: LiquidFillLoader(
+                  size: 80,
+                  value: 0.55,
+                  shape: LiquidShape.roundedRect,
+                  borderRadius: 30,
+                  waveColor: Colors.deepPurple,
+                  borderColor: Colors.deepPurple,
+                  dualWave: true,
+                  showPercentage: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Liquid Fill Loader (Bubbles)',
+                child: LiquidFillLoader(
+                  size: 80,
+                  value: 0.8,
+                  waveColor: Colors.teal,
+                  borderColor: Colors.teal,
+                  enableBubbles: true,
+                  glowEffect: true,
+                  showPercentage: true,
+                ),
+              ),
+              const SizedBox(height: 30),
+
+              _LoaderCard(
+                title: 'Liquid Fill Loader (Fast Waves)',
+                child: LiquidFillLoader(
+                  size: 80,
+                  value: 0.45,
+                  waveColor: Colors.orange,
+                  borderColor: Colors.orange,
+                  waveSpeed: 2.5,
+                  waveHeight: 14,
+                  frequency: 2.0,
+                  dualWave: true,
+                  showPercentage: true,
+                ),
+              ),
+              const SizedBox(height: 50),
             ],
           ),
         ),

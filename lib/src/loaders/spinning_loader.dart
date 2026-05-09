@@ -13,12 +13,25 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class SpinningLoader extends StatefulWidget {
+  /// The color of the rotating arc.
   final Color color;
+
+  /// The size of the spinner widget.
   final double size;
+
+  /// The duration of the rotation animation.
   final Duration duration;
+
+  /// The width of the spinner border.
   final double borderWidth;
+
+  /// The animation curve for the rotation.
   final Curve animationCurve;
+
+  /// Optional background color for the spinner.
   final Color? backgroundColor;
+
+  /// The length of the rotating arc in radians.
   final double arcLength;
 
   const SpinningLoader({

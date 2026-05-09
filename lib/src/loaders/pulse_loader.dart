@@ -13,12 +13,25 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class PulseLoader extends StatefulWidget {
+  /// The color of the expanding pulse rings.
   final Color color;
+
+  /// The size of the center pulse point.
   final double size;
+
+  /// The duration of the pulse animation.
   final Duration duration;
+
+  /// The number of concentric pulse rings.
   final int pulseCount;
+
+  /// The animation curve for the pulse expansion.
   final Curve animationCurve;
+
+  /// The maximum radius multiplier for the expanding rings.
   final double maxRadius;
+
+  /// The minimum opacity for the fading rings.
   final double minOpacity;
 
   const PulseLoader({

@@ -13,13 +13,28 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class ShimmerLoader extends StatefulWidget {
+  /// The width of the shimmer placeholder.
   final double width;
+
+  /// The height of the shimmer placeholder.
   final double height;
+
+  /// The base color of the placeholder.
   final Color baseColor;
+
+  /// The highlight color for the shimmer effect.
   final Color highlightColor;
+
+  /// The duration of the shimmer animation.
   final Duration duration;
+
+  /// The border radius of the placeholder.
   final BorderRadius borderRadius;
+
+  /// The width of the shimmer highlight band.
   final double shimmerWidth;
+
+  /// The animation curve for the shimmer motion.
   final Curve animationCurve;
 
   const ShimmerLoader({

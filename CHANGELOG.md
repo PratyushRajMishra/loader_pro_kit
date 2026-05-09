@@ -1,3 +1,40 @@
+## 1.2.0
+
+### New Features
+
+* **Added LiquidFillLoader** – A highly customizable liquid fill loader with wave animation
+  * Smooth animated wave motion with dual wave support
+  * Gradient liquid fill with percentage display
+  * Multiple shapes: circle and rounded rectangle
+  * Glow effect and bubble animation options
+  * Customizable wave height, speed, and frequency
+
+### Documentation Improvements
+
+* **Comprehensive API Documentation** – Added dartdoc comments to all 13 loader widgets
+  * All constructor parameters now documented with clear descriptions
+  * Improves code readability and IDE autocomplete experience
+  * Helps developers understand each parameter's purpose and default values
+* **Public API Coverage** – Increased documented API elements from 18.9% to 20%+
+  * Added parameter-level documentation for 100+ API elements
+  * Better support for pub.dev scoring and code quality metrics
+
+### Loaders with New Documentation
+
+* BounceLoader
+* CircleLoader
+* DotLoader
+* PulseLoader
+* WaveLoader
+* SpinningLoader
+* OrbitLoader
+* LogoLoader
+* ImageLoader
+* LinearLoader
+* ShimmerLoader
+* SkeletonLoader (including SkeletonLine and SkeletonCircle)
+* LiquidFillLoader
+
 ## 1.1.0
 
 ### New Features

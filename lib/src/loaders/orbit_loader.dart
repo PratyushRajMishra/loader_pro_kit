@@ -20,25 +20,49 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class OrbitLoader extends StatefulWidget {
+  /// The size of the loader widget.
   final double size;
+
+  /// The number of dots orbiting around the center.
   final int dotCount;
+
+  /// The radius of the orbit path.
   final double radius;
+
+  /// The size of each orbiting dot.
   final double dotSize;
 
+  /// The duration of the orbit animation.
   final Duration duration;
+
+  /// The animation curve for the orbit motion.
   final Curve curve;
 
+  /// Whether to orbit in reverse (counter-clockwise) direction.
   final bool reverse;
+
+  /// Whether to apply a glow effect to the orbiting dots.
   final bool glowEffect;
 
+  /// Whether to animate the dots with scale effect.
   final bool animateScale;
+
+  /// Whether to animate the dots with opacity effect.
   final bool animateOpacity;
 
+  /// Whether to use elliptical orbit instead of circular.
   final bool elliptical;
+
+  /// The width-to-height ratio for elliptical orbits.
   final double ellipseRatio;
 
+  /// Whether to use gradient colors for the orbiting dots.
   final bool useGradient;
+
+  /// Optional list of gradient colors for the dots.
   final List<Color>? gradientColors;
+
+  /// The color of the orbiting dots.
   final Color color;
 
   const OrbitLoader({

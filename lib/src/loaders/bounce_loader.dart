@@ -14,12 +14,25 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class BounceLoader extends StatefulWidget {
+  /// The color of the bouncing dots.
   final Color color;
+
+  /// The size of each dot.
   final double size;
+
+  /// The duration of the bounce animation.
   final Duration duration;
+
+  /// The number of bouncing dots to display.
   final int dotCount;
+
+  /// The animation curve for the bouncing motion.
   final Curve animationCurve;
+
+  /// The height multiplier for the bounce effect.
   final double bounceHeight;
+
+  /// Whether to apply opacity animation along with bouncing.
   final bool opacityAnimation;
 
   const BounceLoader({

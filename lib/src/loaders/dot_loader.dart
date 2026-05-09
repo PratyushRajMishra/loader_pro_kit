@@ -13,13 +13,28 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class DotLoader extends StatefulWidget {
+  /// The color of the scaling dots.
   final Color color;
+
+  /// The size of each dot.
   final double size;
+
+  /// The duration of the scaling animation.
   final Duration duration;
+
+  /// The number of dots to display.
   final int dotCount;
+
+  /// The spacing between adjacent dots.
   final double spacing;
+
+  /// The animation curve for the scaling motion.
   final Curve animationCurve;
+
+  /// The minimum scale value for the dots.
   final double minScale;
+
+  /// The maximum scale value for the dots.
   final double maxScale;
 
   const DotLoader({

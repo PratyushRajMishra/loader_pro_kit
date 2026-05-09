@@ -13,11 +13,22 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class CircleLoader extends StatefulWidget {
+  /// The color of the rotating circle border.
   final Color color;
+
+  /// The size of the loader widget.
   final double size;
+
+  /// The duration of the rotation animation.
   final Duration duration;
+
+  /// The width of the circle border.
   final double borderWidth;
+
+  /// The animation curve for the rotation.
   final Curve animationCurve;
+
+  /// Optional background color for the circle.
   final Color? backgroundColor;
 
   const CircleLoader({

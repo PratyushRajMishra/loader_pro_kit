@@ -2,6 +2,14 @@
 
 A professional Flutter loading animation package for modern mobile and web applications. `loader_pro_kit` provides customizable, high-performance loading widgets designed for production apps that need clean UI feedback, skeleton states, and branded loading experiences.
 
+## Demo
+
+<video src="https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/doc/videos/loader.webm" width="320" height="640" controls></video>
+
+Or view the demo GIF:
+
+![Demo](doc/videos/demo.gif)
+
 ## 1. Why Loader Pro Kit
 
 `loader_pro_kit` helps Flutter developers implement smooth loading indicators quickly, without external dependencies.
@@ -46,7 +54,7 @@ A professional Flutter loading animation package for modern mobile and web appli
 
 ```yaml
 dependencies:
-  loader_pro_kit: ^1.1.0
+  loader_pro_kit: ^1.2.0
 ```
 
 2. Install dependencies:

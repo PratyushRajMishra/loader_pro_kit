@@ -16,11 +16,22 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class SkeletonLoader extends StatefulWidget {
+  /// The list of skeleton items to display.
   final List<SkeletonItem> items;
+
+  /// The duration of the shimmer animation.
   final Duration duration;
+
+  /// The base color of the skeleton items.
   final Color baseColor;
+
+  /// The highlight color for the shimmer effect.
   final Color highlightColor;
+
+  /// The animation curve for the shimmer motion.
   final Curve animationCurve;
+
+  /// The width of the shimmer highlight band.
   final double shimmerWidth;
 
   const SkeletonLoader({
@@ -88,9 +99,16 @@ abstract class SkeletonItem {
 /// Displays a rectangular line with shimmer effect,
 /// perfect for text or content placeholders.
 class SkeletonLine extends SkeletonItem {
+  /// The width of the skeleton line.
   final double width;
+
+  /// The height of the skeleton line.
   final double height;
+
+  /// The margin around the skeleton line.
   final EdgeInsets margin;
+
+  /// The border radius of the skeleton line corners.
   final BorderRadius borderRadius;
 
   SkeletonLine({
@@ -145,7 +163,10 @@ class SkeletonLine extends SkeletonItem {
 /// Displays a circular shape with shimmer effect,
 /// perfect for avatar or profile picture placeholders.
 class SkeletonCircle extends SkeletonItem {
+  /// The radius of the circular skeleton.
   final double radius;
+
+  /// The margin around the circular skeleton.
   final EdgeInsets margin;
 
   SkeletonCircle({this.radius = 40, this.margin = const EdgeInsets.all(8)});

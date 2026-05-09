@@ -14,12 +14,25 @@ import 'package:flutter/material.dart';
 /// )
 /// ```
 class ImageLoader extends StatefulWidget {
+  /// The image to display in the circular loader.
   final ImageProvider image;
+
+  /// The color of the rotating border gradient.
   final Color loaderColor;
+
+  /// The size of the image loader.
   final double size;
+
+  /// The duration of the rotation animation.
   final Duration duration;
+
+  /// The width of the circular border.
   final double borderWidth;
+
+  /// The animation curve for the rotation.
   final Curve animationCurve;
+
+  /// Optional gradient colors for the border.
   final List<Color>? gradientColors;
 
   const ImageLoader({

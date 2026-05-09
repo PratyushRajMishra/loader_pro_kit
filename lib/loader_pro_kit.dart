@@ -38,3 +38,4 @@ export 'src/loaders/linear_loader.dart';
 export 'src/loaders/shimmer_loader.dart';
 export 'src/loaders/skeleton_loader.dart';
 export 'src/loaders/orbit_loader.dart';
+export 'src/loaders/liquid_fill_loader.dart';
