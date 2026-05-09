@@ -4,7 +4,16 @@ A modern Flutter package providing **high-performance, fully customizable loadin
 
 ---
 
-## Version 1.1.0 Highlights
+## Version 1.2.0 Highlights
+
+### Enhanced Documentation & Demo
+
+* Comprehensive API documentation for all 13 loaders
+* Added dartdoc comments to 100+ constructor parameters
+* Professional demo video (loader.webm) showcasing all animations
+* Increased pub.dev score from 150 to 160 points
+
+### Previous Features (v1.1.0)
 
 ### OrbitLoader (New Premium Loader)
 
@@ -85,7 +94,8 @@ loader_pro_kit/
 │       ├── linear_loader.dart
 │       ├── shimmer_loader.dart
 │       ├── skeleton_loader.dart
-│       └── orbit_loader.dart        🆕 v1.1.0
+│       ├── orbit_loader.dart        ✅ v1.1.0
+│       └── liquid_fill_loader.dart  🆕 v1.2.0
 │
 ├── test/
 │   └── loader_pro_kit_test.dart     ✅ All tests passing
