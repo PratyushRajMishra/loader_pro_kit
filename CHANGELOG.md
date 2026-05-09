@@ -1,3 +1,65 @@
+## 1.2.1
+
+### Demo & README Improvements
+
+* Added optimized demo GIF preview for GitHub and pub.dev
+  * Added responsive README demo section
+  * Improved package presentation and visual showcase
+  * Optimized demo media rendering for better loading performance
+  * Added centered demo preview with compact sizing
+
+### New Features
+
+* **Added LiquidFillLoader** – A highly customizable liquid fill loader with wave animation
+  * Smooth animated wave motion with dual wave support
+  * Gradient liquid fill with percentage display
+  * Multiple shapes support:
+    * Circle
+    * Rounded rectangle
+  * Glow effect and animated bubble support
+  * Customizable wave height, speed, and frequency
+  * Smooth painter-based rendering for better performance
+
+### Demo App Improvements
+
+* Added dedicated LiquidFillLoader showcase section
+* Added multiple LiquidFillLoader variations:
+  * Default
+  * Gradient
+  * Rounded
+  * Bubble effect
+  * Fast wave animation
+* Improved demo organization and visual hierarchy
+
+### Documentation Improvements
+
+* Updated README with LiquidFillLoader examples
+* Added advanced customization examples
+* Improved package SEO keywords
+* Updated total loader count to 14
+* Enhanced package discoverability on pub.dev
+
+### Performance & Quality
+
+* Optimized wave animation rendering
+* Improved animation smoothness using CustomPainter
+* Reduced unnecessary rebuilds
+* Maintained smooth 60 FPS animations
+
+### Code Quality
+
+* Improved loader architecture consistency
+* Added reusable liquid shape clipping system
+* Enhanced customization flexibility
+* Maintained zero third-party runtime dependencies
+
+### Dependencies
+
+* No breaking changes
+* No new dependencies added
+* Fully backward compatible
+
+
 ## 1.2.0
 
 ### New Features
