@@ -4,16 +4,9 @@ A professional Flutter loading animation package for modern mobile and web appli
 
 ## Demo
 
-<div align="center">
+![Loader Pro Kit Demo](https://raw.githubusercontent.com/PratyushRajMishra/loader_pro_kit/main/doc/videos/loader.gif)
 
-<img src="doc/videos/loader.gif" alt="Loader Pro Kit Demo" width="320" />
-
-<br/>
-<br/>
-
-**Loader Pro Kit — Beautiful Flutter Loading Animations**
-
-</div>
+**Loader Pro Kit — 14 Beautiful Flutter Loading Animations**
 
 ## 1. Why Loader Pro Kit
 
