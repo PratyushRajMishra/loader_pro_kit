@@ -25,7 +25,7 @@ Expected output: `00:00 +13: All tests passed!`
 ### Step 3: Verify pubspec.yaml
 Already updated with:
 - ✅ name: loader_pro_kit
-- ✅ version: 1.2.0
+- ✅ version: 1.2.2
 - ✅ description: Complete
 - ✅ homepage: https://github.com/PratyushRajMishra/loader_pro_kit
 - ✅ repository: Added
@@ -78,9 +78,9 @@ flutter pub publish
 
 You'll see:
 ```
-Publishing loader_pro_kit 1.2.0 to pub.dev:
+Publishing loader_pro_kit 1.2.2 to pub.dev:
 ...
-Do you want to publish loader_pro_kit 1.2.0 to pub.dev (y/n)?
+Do you want to publish loader_pro_kit 1.2.2 to pub.dev (y/n)?
 ```
 
 **Type:** `y` and press Enter
@@ -97,7 +97,7 @@ Do you want to publish loader_pro_kit 1.2.0 to pub.dev (y/n)?
    - ✅ Description shows
    - ✅ README renders properly with video demo
    - ✅ Documentation visible
-   - ✅ Version 1.2.0
+   - ✅ Version 1.2.2
 
 ### Step 9: Update Your Local Documentation
 ```bash
@@ -118,7 +118,7 @@ flutter pub add loader_pro_kit
 Or add manually:
 ```yaml
 dependencies:
-  loader_pro_kit: ^1.2.0
+  loader_pro_kit: ^1.2.2
 ```
 
 ---
@@ -165,8 +165,8 @@ Before running `flutter pub publish`:
 - ✅ Code formatted: `flutter format lib/ test/ example/lib/`
 - ✅ Analysis clean: `dart analyze lib/` (no errors)
 - ✅ Tests passing: `flutter test` (all 13 passing)
-- ✅ pubspec.yaml updated (version 1.2.0, metadata filled)
-- ✅ CHANGELOG.md updated (version 1.2.0 entry)
+- ✅ pubspec.yaml updated (version 1.2.2, metadata filled)
+- ✅ CHANGELOG.md updated (version 1.2.2 entry)
 - ✅ Demo video (loader.webm) added
 - ✅ README.md complete (examples, usage, docs)
 - ✅ LICENSE file present

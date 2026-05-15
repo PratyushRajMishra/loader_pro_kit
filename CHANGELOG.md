@@ -1,3 +1,19 @@
+## 1.2.2
+
+### Demo & Publishing Updates
+
+* Added `doc/videos/loader.webm` to package repository for README demo usage
+* Updated README demo section to include direct WebM video player markup
+* Added fallback GIF preview and direct demo video link for better pub.dev compatibility
+* Bumped package version to `1.2.2`
+* Updated publication docs to reference `1.2.2`
+
+### Compatibility
+
+* No breaking changes
+* No runtime dependency changes
+* Backward compatible with existing integrations
+
 ## 1.2.1
 
 ### Demo & README Improvements
